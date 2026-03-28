@@ -1,0 +1,50 @@
+/* ═══════════════════════════════════════════
+   InnerBloom — Global Design System
+═══════════════════════════════════════════ */
+:root {
+  --cream:    #FAF6F0;
+  --warm:     #F5EDE0;
+  --warm-d:   #EDE0CC;
+  --sage:     #A8BEA0;
+  --sage-d:   #6F9463;
+  --sage-dd:  #4A6B40;
+  --blush:    #E8B4A0;
+  --blush-l:  #F2D5C8;
+  --blush-d:  #D4907A;
+  --lavender: #C5B8D8;
+  --lav-l:    #EAE4F4;
+  --lav-d:    #9B8EC4;
+  --gold:     #C9A96E;
+  --gold-l:   #F0E0B8;
+  --ink:      #2E2A26;
+  --ink-l:    #3D3530;
+  --mid:      #6B6460;
+  --light:    #9E9690;
+  --white:    #FFFFFF;
+  --r:  16px;
+  --rL: 24px;
+  --rXL:32px;
+  --shadow-sm:  0 2px 8px  rgba(46,42,38,0.06);
+  --shadow-md:  0 4px 20px rgba(46,42,38,0.09);
+  --shadow-lg:  0 8px 40px rgba(46,42,38,0.12);
+  --shadow-xl:  0 16px 64px rgba(46,42,38,0.16);
+}
+
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:'DM Sans',sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+::-webkit-scrollbar { width:6px; }
+::-webkit-scrollbar-track { background:var(--warm); }
+::-webkit-scrollbar-thumb { background:var(--sage); border-radius:3px; }
+::selection { background:var(--blush-l); color:var(--ink); }
+button { font-family:'DM Sans',sans-serif; }
+a { text-decoration:none; color:inherit; }
+img { max-width:100%; display:block; }
+.section-padding { padding:80px 48px; }
+@media(max-width:768px){ .section-padding{ padding:52px 18px; } }
