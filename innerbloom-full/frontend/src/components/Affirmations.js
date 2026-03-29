@@ -139,13 +139,6 @@ export default function Affirmations() {
               {new Date().toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'})} · Private & Secure 🔒
             </p>
 
-            <p style={{ fontSize:11, textTransform:'uppercase', letterSpacing:'0.1em',
-              color:'var(--light)', marginBottom:8 }}>Today's prompt</p>
-            <p style={{ fontFamily:"'Playfair Display',serif", fontSize:16,
-              color:'var(--ink)', marginBottom:18, fontStyle:'italic' }}>
-              "{PROMPTS[activePrompt].replace(/^.{2}\s/,'')}"
-            </p>
-
             <textarea value={journalText} onChange={e=>setJournalText(e.target.value)}
               placeholder="Start writing… this is just for you."
               rows={5}
