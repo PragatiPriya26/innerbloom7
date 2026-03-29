@@ -20,7 +20,7 @@ export default function App() {
     const stored = localStorage.getItem('innerbloom-user');
     if (stored) {
       try {
-        setUser(JSON.parse(stored));
+        setUser(JSON.parse(stored));ghhkjhbhv
       } catch {
         localStorage.removeItem('innerbloom-user');
       }
